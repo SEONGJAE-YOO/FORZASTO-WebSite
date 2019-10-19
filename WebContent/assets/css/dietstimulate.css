@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #c0c0c0;
+}
+.carousel{
+    height: 550px;
+    perspective: 400px;
+    
+}
+.carousel .carousel-item{
+    width: 300px;
+    
+}
+.carousel .carousel-item img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.carousel .carousel-item h2{
+    margin: -5px 0 0;
+    padding: 0;
+    background: #fff;
+    color:#000;
+    box-sizing: border-box;
+    padding: 10px 5px;
+    font-weight: bold;
+    font-size:3em;
+    text-align: center;
+   }

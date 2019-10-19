@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="webstoryboy">
+    <meta name="description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다.">
+    <meta name="keywords" content="메가박스, 유투브, 영화, 최신영화, 영화관, CGV, 롯데시네마, 웹스토리보이, 웹스, 사이트 만들기, 따라하기, 이미지 슬라이드">
+    <title></title>
+      
+    <!-- CSS -->
+ 
+	    <link rel="stylesheet" href="assets/css/style08.css">
+    <link rel="stylesheet" href="assets/css/login.css"> 
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+                                                                                                                                                                                                           
+    <!-- 파비콘 -->
+    
+    <link rel="shortcut icon" href="assets/icons/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="assets/icons/favicon_72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="assets/icons/favicon_96.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/icons/favicon_144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="assets/icons/favicon_192.png" />              
+    
+    <!-- 페이스북 메타 태그 -->
+    <meta property="og:title" content="FORZASTO" />
+    <meta property="og:url" content="https://github.com/webstoryboy/megabox2019" />
+    <meta property="og:image" content="https://webstoryboy.github.io/megabox2019/mega.jpg" />
+    <meta property="og:description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다." />
+   
+    <!-- 트위터 메타 태그 -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="FORZASTO">
+    <meta name="twitter:url" content="https://github.com/webstoryboy/megabox2019/">
+    <meta name="twitter:image" content="https://webstoryboy.github.io/megabox2019/mega.jpg">
+    <meta name="twitter:description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다.">
+                               
+    <!-- 웹 폰트 -->                 
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;subset=korean" rel="stylesheet">
+                            
+    <!-- HTLM5shiv ie6~8 -->                
+    <!--[if lt IE 9]>                 
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script type="text/javascript">
+         alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
+      </script>
+   <![endif]-->
+</head>
+<body>
+    <!--  >
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header clearfix">
+                    <h1>
+                        <a href="#">
+                            <em><img src="assets/img/logo.png" alt="MEGABOX"></em>   
+                            <strong><img src="assets/img/logo-sub.png" alt="LIFE THEATER"></strong>
+                        </a>
+                    </h1>
+                     <nav class="nav">
+                        <ul class="clearfix">
+                            <li><a href="#">레시피</a></li>
+                            <li><a href="#">토크</a></li>
+							<li><a href="#">요리정보</a></li>  
+							<li><a href="#">브랜드</a></li>
+                            <li><a href="#">쉐프</a></li>
+                            <li><a href="#">랭킹</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">로그인</a></li>
+                        </ul>
+                    </nav>    
+                </div>
+            </div>  
+        </div>
+    </header>
+    <!-- //header -->
+    
+	<header style="height:110px;">
+		<div >
+			
+			<!-- 20160204 로그인 및 로고 영역 수정 -->               
+			<div class="inner">
+				<!-- 최상단 수정 -->
+				<div class="top_gnb_wrap">			
+					<ul class="top_gnb cleafix">
+						<li>
+						</li>
+						
+					</ul>
+				</div>
+				<script>
+					function deleteCookie( cookieName ){
+						var expireDate = new Date();
+
+						//어제 날짜를 쿠키 소멸 날짜로 설정한다.
+						expireDate.setDate( expireDate.getDate() - 1 );
+						document.cookie = cookieName + "= " + "; expires=" + expireDate.toGMTString() + "; path=/; domain=dietshin.com";
+					}
+				</script>
+				<!-- 최상단 수정 -->
+
+				
+				<!-- 즐겨찾기 추가 -->
+				<ul class="util_le clfix">
+					<li id="bookmarksite"><a href="javascript:;" onclick="bookmarksite('다이어트신','http://www.dietshin.com/main.asp');">즐겨찾기</a></li>
+				</ul>
+
+				<script>
+					if (navigator.userAgent.search('Firefox') != -1){
+						$("#bookmarksite").HTML("<a href=http://www.dietshin.com title=다이어트신 rel=sidebar><img src=/img/common/topmenu01_off.gif ></a>");
+						//document.getElementById("bookmarksite").innerHTML = "<a href=http://www.dietshin.com title=다이어트신 rel=sidebar><img src=/img/common/topmenu01_off.gif ></a>";
+					}
+				</script>
+				<!-- //즐겨찾기 추가 -->		
+				
+				
+					<ul class="util clfix">
+						<li><a href="login.html">로그인</a></li>
+						<li><a href="userJoin.jsp">회원가입</a></li>
+						
+					</ul>
+				 
+			</div>		
+			<div class="logo_box">
+				<ul class="logo">
+					<li><a href="NewFile9.html"><img src="assets/img/project2.png" width=100px height=57px  alt="FORZASTO" /></a></li>
+				</ul>
+			</div>
+			<!-- //20160204 로그인 영역 수정 -->
+			  
+			
+				<!-- 20160204 서브페이지 메뉴영역 수정 -->  
+				<div class="gnb_sub-wrap">
+					<div class="gnb_sub_bl"></div>
+					<ul class="gnb_sub clfix">
+						<li>
+							<a href="/community/column_list.asp" ><img src="" alt="다이어트꿀팁" /></a><!-- 2014-12-09 활성화 시 a에클래스 active추가 -->
+							<ul class="sub sub01">
+								<li><a href="/community/column_list.asp">전체</a></li>
+								<li><a href="/community/column_list.asp?sub_menu_id=3">칼럼</a></li>
+								<li><a href="/community/column_list.asp?sub_menu_id=2">운동</a></li>
+								<li><a href="/community/column_list.asp?sub_menu_id=5">성공후기</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="recipemain.html" ><img src="" alt="다이어트 레시피" /></a>
+							<ul class="sub sub02">
+								<li><a href="recipemain.html">전체</a></li>
+								<li><a href="recipemain.html">한식</a></li>
+				               <li><a href="recipemain.html">일식</a></li>
+				        	<li><a href="recipemain.html">양식</a></li>
+				            <li><a href="recipemain.html">디저트</a></li>
+				               
+								
+							</ul>
+						</li>
+						
+						
+						<!-- 20160204 메뉴 수정 및 추가 -->	
+						<li>                 
+							<a href="/community/bbs_main.asp" ><img src="" alt="커뮤니티" /></a>
+							<ul class="sub sub04">
+								<li><a href="/community/bbs_main.asp">전체</a></li>
+								<li><a href="/community/bbs_list.asp?menu_id=4">비포&애프터</a></li>
+								<li><a href="/community/photo_list.asp?menu_id=1">자극사진</a></li>
+								<li><a href="/community/photo_list.asp?menu_id=9">식단</a></li>
+								<li><a href="/community/bbs_list.asp?menu_id=126">팁&노하우</a></li>
+								
+							</ul>
+						</li>				
+									
+						<li>
+							<a href="/community/together_challenge_main.asp" ><img src="" alt="함께도전해요" /></a>
+							<ul class="sub sub05">
+								<li><a href="/community/together_challenge_main.asp">전체</a></li>
+								<li><a href="/community/bbs_list.asp?menu_id=20">30일 도전</a></li>
+								<li><a href="/community/together_challenge_list.asp?menu_id=10000">그룹방</a></li>
+							</ul>
+						</li>				
+						<li>                 
+							<a href="/community/bbs_main.asp" ><img src="" alt="고객센터" /></a>
+							
+						</li>
+						<!-- //20160204 메뉴 수정 및 추가 -->	
+					</ul>
+				</div>
+				<!-- //20160204 서브페이지 메뉴영역 수정 -->
+			
+		<div>
+	</header><!-- // header -->
+	<!-- container // -->
+<!-- container // -->
+	<div id="container">
+		<!-- contents // -->
+		<div class="contents column">
+			
+			
+				
+			
+
+			
+
+			<h2>다이어트 꿀팁(칼럼)</h2>
+
+			<div class="gall-view">
+				<div class="tit">
+					<span class="fr">
+					
+					</span>
+					<!-- //20161031 상세 타이틀영역 수정/삭제 영역 통일화 작업 -->				
+					<p>채소와 과일도 코끼리만큼 먹으면 살찐다?!</p>				
+				</div>
+				
+				
+				<div class="bbs-info3">
+					<!-- 20160921 커뮤니티상세p 회원정보 등급표시 -->
+					<span class="inner">
+						<span class="ico-wrap_new">
+							
+							<a href="bbs_editor.asp?bbs_editor=1759276" style="cursor:pointer"><img src="" class="pic r3"></a>
+							
+						</span>							
+						<em>
+							<div class="inner_nick_box">
+								
+								<a href="bbs_editor.asp?bbs_editor=1759276" style="cursor:pointer"><p class="inner_nick2">힐링씨티</p></a>
+								
+							</div>
+						</em>							
+					</span>
+					<span class="group_bbs_con"><!-- 20160921 "group_bbs_con"으로 클래스명 변경 -->
+						<div class="date_c">
+						<ul class="dateCmnt2">
+							<!--<li class="dc01"><span>2019.06.06 10:00</span></li>-->
+							<li class="dc02"><span>7,184</span></li>
+							<li class="dc03"><span>54</span></li>
+						</ul>
+						</div>
+					</span>
+				</div>
+
+				<div class="txt">
+					<div class="viewtops">
+						<p class="viewt_txtin"><img alt="채소와 과일도 코끼리만큼 먹으면 살찐다?!"  width='100%' src='http://data.0app0.com/diet/board/4234/p_20190604150831_5974924683.jpg' title='p%5F20190604150831%5F5974924683%2Ejpg'><br><br><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>‘코끼리도 초식동물이다.’라는 말이 나올 정도로 코끼리는 어마어마한 양의 채소와 과일을 먹는 초식동물입니다.</span></p><br><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>코끼리는 암에 걸리지 않는 동물로도 알려져 있는데, 그 이유는 유전적인 이유도 있겠지만, 채소와 과일을 먹는 습성도 무시할 수 없습니다.</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>그럼, 사람도 채식한다면 암에 걸리지 않을까요?</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>이에 관한 실험으로, 건장한 성인 17명에게 하루에 20인분의 과일과 40인분의 채소를 3개월~6개월 정도 매일 먹도록 했습니다.</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>상상도 할 수 없는 많은 양의 채소와 과일인데요, 그들이 섭취한 과당만 해도 약 200g으로 탄산음료 8캔과 비슷한 양이라고 합니다.</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>그럼, 그만큼 살이 쪘을까요?</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>실험 결과, 체중과 혈압, 인슐린과 혈중 지질 수치를 측정했을 때, 별다른 부작용은 없고, 오히려 나쁜 콜레스테롤인 LDL콜레스테롤이 38포인트 떨어졌다고 합니다.</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>참 예상을 뒤엎는 신기한 결과를 가져온 실험이었습니다.</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>이 실험 참가자들은 매일 다른 음식은 먹지 않고, 채소와 과일, 견과류로만 구성된 2500kcal의 고섬유 식단을 맞춰 먹었습니다.</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>그러니, 여러분들이 평소대로 식사하면서, 위의 실험 참가자들처럼 먹는다면, 같은 결과는 나오기 힘들 것입니다.</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>하버드 대학에서 출간하는 ‘하버드 건강 편지(Harvard health letter)’에 따르면, 과당은 가공된 상태로 식품에 첨가되었을 때 영양학적인 문제가 생긴다고 합니다.</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>하지만, 천연 과당은 건강한 일반인들이 많이 먹는다고 할지라도, 딱히 해로운 영향이 없습니다.</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>그럼, 당뇨병 환자들의 경우는 어떻게 해야 할까요?</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>보통은 당뇨병 환자들에게 항산화 작용과 항염증 작용을 하는 과일을 먹으라고 하기도 합니다.</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>하지만, 반대로 몇몇 전문가들은 과당 자체에 대한 우려로 과일 섭취를 제한하기도 합니다.</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>대체 누구의 말이 맞는 걸까요?</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>당뇨병 관련 실험에서 한 그룹에는 평소 식사와 함께 과일을 최소 2조각 이상 먹도록 했습니다.</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>그리고, 다른 그룹에는 평소 식사와 함께 과일을 2조각 이하로만 먹도록 했습니다.</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>3개월 뒤, 실험 결과로는 두 그룹 간의 체중이나 혈당 차이는 발견되지 않았다고 합니다.</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>그래서, ‘당뇨병 환자들에게 과일 섭취를 제한하면 안 된다.’라는 결론이 나왔다고 합니다.</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>그렇다고, 과일을 많이 먹으라는 이야기는 아니고, 과일을 먹더라도 밥 먹는 순서를 잘 지켜가면서 혈당이 급격히 오르지 않도록 주의해야 합니다.</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>어떻게 먹느냐에 따라서 혈당 수치는 30%의 차이가 나는데, 과일을 먼저 먹는 것이 아니라 야채나 다른 음식을 통해서 혈당을 천천히 올린 후 먹어야 합니다.</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'>그럼, 이 부분만 기억하셔서 건강한 과일 섭취 하시길 바랍니다.</span></p><br><p><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'></span><iframe width='340' height='250' src='//www.youtube.com/embed/nU_RkeA88DY' frameborder='0' allowfullscreen=''></iframe></p><br><p><span style='color: rgb(88, 88, 88); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 16px;'>※ 칼럼제공: 힐링씨티 (</span><a href='https://brunch.co.kr/@healingcity' target='_self' style='text-decoration-line: none; font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 16px;'>https://brunch.co.kr/@healingcity</a><span style='color: rgb(88, 88, 88); font-family: 나눔고딕, NanumGothic, sans-serif; font-size: 16px;'>)</span><span style='font-size: 12pt; font-family: 나눔고딕, NanumGothic, sans-serif;'></span></p></p>
+					</div>
+					<!--20171221 하단 무단 이용금지 영역 추가-->
+					<!--//20171221 하단 무단 이용금지 영역 추가-->
+					
+					<!--20181129 칼럼 게시글 안내 메시지 추가-->
+					<div class="info_message mt15">칼럼은 에디터의 개인적인 견해를 바탕으로 작성되며, 읽을거리와 정보 공유를위해 연재됩니다.<br>
+					
+					</div>
+					<!--//20181129 칼럼 게시글 안내 메시지 추가-->
+
+				</div>
+			
+			
+<br>
+<br><br>
+
+
+ <div class="swiper-slide" ></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+   
+    
+    <!-- 자바스크립트 라이브러리 -->
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/modernizr-custom.js"></script>
+    <script src="assets/js/ie-checker.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+        <script src="assets/js/common_sub.js"></script>
+    <script>
+        //배너 이미지 슬라이드
+        var mySwiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            autoplay: {
+                delay: 5000,
+            },
+        });
+        
+        //영화차트 이미지 슬라이드
+        var mySwiper = new Swiper('.swiper-container2', {
+            slidesPerView: 4,
+            spaceBetween: 24,
+            mousewheel: {
+                invert: true,
+            },
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+            },
+            autoplay: {
+                delay: 3000,
+            },
+        });
+        
+        //영화차트 탭 메뉴
+        var movBtn = $(".movie_title > ul > li");
+        var movCont = $(".movie_chart > div");
+        
+        movCont.hide().eq(0).show();
+        
+        movBtn.click(function(e){
+            e.preventDefault();
+            var target = $(this);
+            var index = target.index();
+            movBtn.removeClass("active");
+            target.addClass("active");
+            movCont.css("display","none");
+            movCont.eq(index).css("display","block");
+        });
+        
+
+    </script>
+  </div>
+  </div>
+ </div></div>
+    <!-- footer // -->
+
+	<div class="footer">
+    	<div class="inner_top font_ng">
+			<ul class="notice cleafix">
+				<!--<li><a href="/community/mem_info_noti.asp">개인정보취급방침</a></li> 2019.04.12 나미나차장요청
+				<li><a href="#layer-partner" class="btn-layer-open">제휴문의</a></li>
+				<li class="last"><a href="/community/access_terms.asp">이용약관</a></li> -->
+				<li><a href="https://dshop.dietshin.com/mem_info_noti.asp" target="_blank">개인정보취급방침</a></li> 
+				<li><a href="#layer-partner" class="btn-layer-open">제휴문의</a></li>
+				<li class="last"><a href="https://dshop.dietshin.com/access_terms.asp" target="_blank">이용약관</a></li>
+			</ul>
+        </div>
+        	
+		<div class="footer_inner font_ng">
+			<ul>
+				<li class="li36">
+                	<div class="cscenter_w">
+                    	<ul>
+                        	<li><span class="cscenter_tit">고객센터</span></li>
+                            <li><span class="cscenter_titline"></span></li>
+                            <li><span class="cscenter_email"><a href="yuseong12345@naver.com"><img src="assets/img/ico_email.png"  >yuseong12345@naver.com</a></span></li>
+                            <li><span class="cscenter_txt">문의사항은 관리자에게 게시판 또는 이메일 주소로<br>
+                            연락주시면 빠른 시일내에 회신드리도록 하겠습니다.</span></li>
+                            <li class="mt15"><a href="/community/bbs_list.asp?menu_id=72" class="btn_1to1">관리자에게</a></li>
+                        </ul>
+                    </div>
+                </li>
+				<li class="li34">  
+                	<div class="cscenter_w">  
+                    	<ul>
+                        	<li><span class="cscenter_tit">FORZASTO</span></li>
+                            <li><span class="cscenter_titline"></span></li>
+                            <li><span class="cscenter_txt mt20">(주)FORZASTO 대표 유성재</span></li>
+                            <li><span class="cscenter_txt mt10">본점 : 사업자등록번호 130-46-24148<br>
+                            인천 부평구 구산동 무네미로 448번길 56</span></li>
+                            <li><a href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp" class="btn_licensee mt5">사업자번호조회</a></li>
+                            <li><span class="cscenter_txt mt10">지점 : 사업자등록번호 376-25-55086<br>
+                            인천 부평구 구산동 무네미로 448번길 56</span></li>
+                            <li><span class="cscenter_txt mt10">통신판매업신고 제2019-인천부평<br>
+                            건강기능식품판매업 제2019-031645 (송내)</span></li>
+                        </ul>
+                    </div>
+                </li>
+				<li class="li24">
+                	<div class="notice_w">
+                    	<ul>
+                        	<li><span class="cscenter_tit">공지사항</span></li>
+                            <li><span class="cscenter_titline"></span></li>
+
+							<li><span class="notice_txt"><a href="/community/bbs_view.asp?idx=4363244&ptype=rnoti">·&nbsp; 마이케어 핑거루트환 체험단 발표</a></span></li>
+
+							<li><span class="notice_txt"><a href="/community/bbs_view.asp?idx=4358559&ptype=rnoti">·&nbsp; [공지] 08/29 서버 점검 및 이용제한 안내</a></span></li>
+
+							<li><span class="notice_txt"><a href="/community/bbs_view.asp?idx=4357009&ptype=rnoti">·&nbsp; 헤이 미스터브라운 체험단 모집 (08.27~09.05)</a></span></li>
+
+							<li><span class="notice_txt"><a href="/community/bbs_view.asp?idx=4356882&ptype=rnoti">·&nbsp; 통밀당 크리스피롤 체험단 모집 (08.27~09.05)</a></span></li>
+
+							<li><span class="notice_txt"><a href="/community/bbs_view.asp?idx=4350789&ptype=rnoti">·&nbsp; 네이처샵 레몬머틀 체험단 모집 (08.22~09.01)</a></span></li>
+
+                        </ul>
+                    </div>
+                    
+                    <div class="notice_w mt10">
+                    	<ul>
+                        	<li><span class="cscenter_tit">SNS</span></li>
+                            <li><span class="cscenter_titline"></span></li>
+                            <li class="mt15"><a href="https://www.facebook.com/1408140989464114" class="sns_img mr8"><img src="assets/img/ico_facebook.png"></a><a href="https://www.instagram.com/dietshin79" class="sns_img mr8"><img src="assets/img/ico_insta.png"></a><a href="https://blog.naver.com/dietsin79" class="sns_img"><img src="assets/img/ico_blog.png"></a></li>
+                              </ul>
+                    </div>
+                </li>
+			</ul>
+		</div>
+        
+        <div class="inner_btm font_ng">
+			<p class="inner_btm_t">FORZASTO에서 제공하는 모든 콘텐츠의 저작권은 제공처 또는 FORZASTO에 있으며, 이를 무단 이용 및 재배포하는 경우 저작권법 등에 따라 법적책임을 질 수 있습니다</p>
+        </div>
+	</div>
+	
+
+
+</div><!-- // wrap -->
+	<span itemscope="" itemtype="http://schema.org/Organization">
+	 <link itemprop="url" href="http://www.dietshin.com">
+	 <a itemprop="sameAs" href="https://www.facebook.com/dietsin9"></a>
+	 <a itemprop="sameAs" href="https://www.instagram.com/dietshin79"></a>
+	 <a itemprop="sameAs" href="https://www.youtube.com/channel/UC_eZqsBWCuwNcanFH70FgRw"></a>
+	</span>
+
+
+<!-- 2014-12-17 제휴문의 레이어 추가 // -->
+<!-- layer // -->
+
+<div class="dimmed"></div>
+
+<div class="layer r8" id="layer-partner">
+	<div class="tit">제휴 문의</div>
+	<div class="layer-cont partner">
+		<p>아래 이메일 주소로 연락주시면<br/>빠른 시일내에 회신드리도록 하겠습니다.</p>
+		<div class="box r5">
+			<strong>담당자 :</strong>
+			<a href="yuseong12345@naver.com" class="p-bluegreen">yuseong12345@naver.com</a>
+		</div>
+		<p class="txt01">감사합니다.</p>
+
+		<div class="btn-ac">
+			<a href="" id="btn-close1"><img src="/img/btn/btn_ok2.gif" alt="확인" /></a>
+		</div>
+	</div>
+	<a href="" class="btn-close"><img src="/img/btn/btn_close.png" alt="닫기" /></a>
+</div><!-- // 2014-12-17 제휴문의 레이어 추가 -->
+
+<!-- 마이페이지 사진 등록/변경 -->
+<div class="layer r8" id="layer-fileattach">
+	<div class="tit">사진 첨부</div>
+	<div class="layer-cont fileattach">
+		<form name="imgupload" id="data" action="/API/newmember_user_img_reg.asp" method="post" enctype="multipart/form-data">
+		<input type="hidden" name="hiddensex" id="hiddensex" value="">
+		<div class="file-wrap">
+			<input type="file" class="file" id="uploadInputBoxA" name="uploadInputBox" />
+			<span class="txt-file"></span>
+			<a class="btn"><img src="/img/btn/btn_file_search.gif" alt="찾아보기" /></a>
+		</div>
+		<p class="txt">등록 가능한 파일 확장자는 jpg, gif, png 입니다.</p>
+		<div class="btn-ac">
+			<input type="image" src="/img/btn/btn_ok2.gif" alt="확인" /></a>
+			<a href="" id="btn-close"><img src="/img/btn/btn_cancel2.gif" alt="취소" /></a>
+		</div>
+		</form>
+	</div>
+	<a href="" class="btn-close"><img src="/img/btn/btn_close.png" alt="닫기" /></a>
+</div>
+<!-- 마이페이지 사진 등록/변경 -->
+
+<!-- 2014-12-17 고객센터 레이어 추가 // -->
+<!-- layer // -->
+<div class="layer r8" id="layer-center">
+	<div class="tit">제휴 문의</div>
+	<div class="layer-cont partner">
+		<p>문제가 있거나 문의 사항이<br/> 있으시면 아래의 주소로<br/> 문의하시기 바랍니다.</p>
+		<div class="box r5">
+			<strong>고객 지원 :</strong>
+			<a href="yuseong12345@naver.com" class="p-bluegreen">"yuseong12345@naver.com</a>
+		</div>
+		<p class="txt01">감사합니다.</p>
+
+		<div class="btn-ac">
+			<a href="" id="btn-close1"><img src="/img/btn/btn_ok2.gif" alt="확인" /></a>
+		</div>
+	</div>
+	<a href="" class="btn-close"><img src="/img/btn/btn_close.png" alt="닫기" /></a>
+</div><!-- // 2014-12-17 고객센터 레이어 추가 -->
+
+<!-- 2014-12-18  위치보기 레이어 추가 // -->
+<!-- layer // -->
+<div class="layer r8" id="layer-map">
+	<div class="tit">위치보기</div>
+	<div class="layer-cont map">
+		<div id="healthmap"></div>
+	</div>
+	<a href="" class="btn-close"><img src="/img/btn/btn_close.png" alt="닫기" /></a>
+</div><!-- // 2014-12-18 위치보기 레이어 추가 -->
+<!-- layer // -->
+
+<script>
+	// 배너 클릭시 카운트 처리 및 페이지 이동
+	function go_location(idx){
+		$.ajax({
+			type	: "post",
+			url		: "/API/banner_click.asp",
+			data:{
+				"idx":idx
+			},
+			dataType	: "json",
+			async	: false,
+			success : function(oResult){
+				if (oResult.LINK_URL != '')
+				{
+					location.href = oResult.LINK_URL;
+				}
+				return;
+			}
+		});
+	}
+
+	function go_banner_log(idx){
+		$.ajax({
+			type	: "post",
+			url		: "/API/banner_log.asp",
+			data:{
+				"idx":idx
+			},
+			dataType	: "json",
+			async	: false,
+			success : function(oResult){
+				if (oResult.LINK_URL != '')
+				{
+					location.href = oResult.LINK_URL;
+				}
+				return;
+			}
+		});
+	}
+</script>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://stat.0app0.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 25]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="http://stat.0app0.com/piwik.php?idsite=25" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137817445-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137817445-1');
+</script> 
+</body>
+</html>
