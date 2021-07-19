@@ -7,7 +7,7 @@ Diet Recipe Site
 ### kmplayer프로그램으로 영상을 보실 수 있습니다, 다른 동영상프로그램으로 영상실행이 안 될수도 있습니다. 
 <br>
 http://naver.me/FMA2Uld8
-비밀번호:1234
+
 <br><br>
 
 Project name을 Register으로 만들어야합니다. 
