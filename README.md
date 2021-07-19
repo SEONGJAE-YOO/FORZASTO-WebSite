@@ -8,6 +8,7 @@ Diet Recipe Site
 <br>
 http://naver.me/FMA2Uld8
 
+위에 링크 클릭후 다운로드 후  kmplayer프로그램으로 영상을 보실 수 있습니다
 <br><br>
 
 Project name을 Register으로 만들어야합니다. 
